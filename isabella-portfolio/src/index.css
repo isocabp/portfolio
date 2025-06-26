@@ -1,0 +1,58 @@
+/* fontes personalizadas */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
+/* tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* estilo base global */
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+/* reset e base */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: theme("colors.offwhite"); /* vai mudar via toggle */
+  color: theme("colors.dark");
+}
+
+/* elementos básicos */
+a {
+  @apply font-medium text-cherry-dark no-underline hover:underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.95em;
+}
+
+/* botão base */
+button {
+  @apply px-4 py-2 rounded-md font-medium transition-colors duration-200 cursor-pointer;
+}
+
+/* modo claro e escuro controlado por classe */
+.dark body {
+  background-color: theme("colors.dark");
+  color: theme("colors.offwhite");
+}
