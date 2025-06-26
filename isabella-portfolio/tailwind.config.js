@@ -2,6 +2,17 @@
 const config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "1.5rem",
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1180px",
+        xl: "1180px",
+        "2xl": "1180px",
+      },
+    },
     extend: {
       colors: {
         // tema escuro
@@ -19,6 +30,7 @@ const config = {
         // tema claro
         lilac: "#A68DCE",
         purple: "#5C3C85",
+        roxo: "#3D1365",
         "purple-muted": "#533C64",
         white: "#FFFFFF",
         offwhite: "#F4F0EB",
