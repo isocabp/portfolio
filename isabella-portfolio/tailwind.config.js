@@ -54,6 +54,7 @@ const config = {
       animation: {
         "slide-in-left": "slide-in-left 0.3s ease-out forwards",
         "slide-out-left": "slide-out-left 0.3s ease-in forwards",
+        "gradient-shimmer": "gradient-shimmer 3s ease infinite",
       },
 
       keyframes: {
@@ -64,6 +65,11 @@ const config = {
         "slide-out-left": {
           "0%": { transform: "translateX(0)", opacity: "1" },
           "100%": { transform: "translateX(-100%)", opacity: "0" },
+        },
+        "gradient-shimmer": {
+          "0%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+          "100%": { "background-position": "0% 50%" },
         },
       },
     },

@@ -25,7 +25,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: theme("colors.offwhite"); /* vai mudar via toggle */
-  color: theme("colors.dark");
 }
 
 /* elementos básicos */
@@ -54,5 +53,5 @@ button {
 /* modo claro e escuro controlado por classe */
 .dark body {
   background-color: theme("colors.dark");
-  color: theme("colors.offwhite");
+  color: theme("colors.cherry.dark");
 }
