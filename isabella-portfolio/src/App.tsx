@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import HomeHero from "./components/HomeHero";
 import AboutSection from "./components/AboutSection";
+import SkillsSection from "./components/SkillsSection";
 
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -45,6 +46,7 @@ export default function App() {
       <main className="pt-20">
         <HomeHero theme={theme} language={language} />
         <AboutSection theme={theme} language={language} />
+        <SkillsSection theme={theme} language={language} />
       </main>
     </div>
   );
