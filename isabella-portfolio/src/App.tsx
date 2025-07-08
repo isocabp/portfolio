@@ -4,7 +4,7 @@ import HomeHero from "./components/HomeHero";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import Trilha from "./components/Trilha";
-
+import ProjectsSection from "./components/ProjectsSection";
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [language, setLanguage] = useState<"pt" | "en">("pt");
@@ -49,6 +49,7 @@ export default function App() {
         <AboutSection theme={theme} language={language} />
         <SkillsSection theme={theme} language={language} />
         <Trilha theme={theme} language={language} />
+        <ProjectsSection theme={theme} language={language} />
       </main>
     </div>
   );
