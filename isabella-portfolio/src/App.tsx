@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import Trilha from "./components/Trilha";
 import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [language, setLanguage] = useState<"pt" | "en">("pt");
@@ -50,6 +51,7 @@ export default function App() {
         <SkillsSection theme={theme} language={language} />
         <Trilha theme={theme} language={language} />
         <ProjectsSection theme={theme} language={language} />
+        <ContactSection theme={theme} language={language} />
       </main>
     </div>
   );

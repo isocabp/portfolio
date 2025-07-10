@@ -186,13 +186,26 @@ export default function Trilha({ language, theme }: TrilhaProps) {
                     transition={{ duration: 0.5, delay: i * 0.1 }}
                     className="mb-8 last:mb-0"
                   >
-                    <time className="block font-mono text-sm mb-1 select-none">
-                      {date}
-                    </time>
                     <h4 className="font-sans font-semibold text-lg capitalize">
                       {title[language]}
                     </h4>
-                    <p className="font-sans italic mb-2">{company}</p>
+
+                    <p
+                      className={classNames(
+                        "font-sans italic ",
+                        isLight ? "text-lesbianGreen-dark" : "text-offwhite"
+                      )}
+                    >
+                      {company}
+                    </p>
+                    <time
+                      className={classNames(
+                        "block font-mono text-sm mb-1 select-none",
+                        isLight ? "text-lesbianGreen-dark" : "text-offwhite"
+                      )}
+                    >
+                      {date}
+                    </time>
                     <p className="whitespace-pre-line text-sm leading-relaxed max-w-[600px]">
                       {description[language]}
                     </p>
@@ -217,13 +230,26 @@ export default function Trilha({ language, theme }: TrilhaProps) {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="mb-8 last:mb-0"
                 >
-                  <time className="block font-mono text-sm mb-1 select-none">
-                    {date}
-                  </time>
                   <h4 className="font-sans font-semibold text-lg capitalize">
                     {title[language]}
                   </h4>
-                  <p className="font-sans italic">{company}</p>
+
+                  <p
+                    className={classNames(
+                      "font-sans italic",
+                      isLight ? "text-lesbianGreen-dark" : "text-offwhite"
+                    )}
+                  >
+                    {company}
+                  </p>
+                  <time
+                    className={classNames(
+                      "block font-mono text-sm mb-1 select-none",
+                      isLight ? "text-lesbianGreen-dark" : "text-offwhite"
+                    )}
+                  >
+                    {date}
+                  </time>
                 </motion.li>
               ))}
             </ul>
