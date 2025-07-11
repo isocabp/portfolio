@@ -35,7 +35,7 @@ export default function Footer({ theme, language }: FooterProps) {
     >
       <p
         className={classNames(
-          "font-cursive text-5xl font-bold select-none cursor-default",
+          "font-cursive text-5xl font-bold select-none cursor-pointer",
           isLight
             ? "text-roxo hover:text-lesbianGreen-dark"
             : "text-lesbianGreen-light hover:text-offwhite"
