@@ -6,6 +6,8 @@ import SkillsSection from "./components/SkillsSection";
 import Trilha from "./components/Trilha";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+
 export default function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [language, setLanguage] = useState<"pt" | "en">("pt");
@@ -52,6 +54,7 @@ export default function App() {
         <Trilha theme={theme} language={language} />
         <ProjectsSection theme={theme} language={language} />
         <ContactSection theme={theme} language={language} />
+        <Footer theme={theme} language={language} />
       </main>
     </div>
   );
