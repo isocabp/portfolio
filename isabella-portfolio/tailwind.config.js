@@ -2,6 +2,17 @@
 const config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      padding: "1.5rem",
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1180px",
+        xl: "1180px",
+        "2xl": "1180px",
+      },
+    },
     extend: {
       colors: {
         // tema escuro
@@ -19,6 +30,7 @@ const config = {
         // tema claro
         lilac: "#A68DCE",
         purple: "#5C3C85",
+        roxo: "#3D1365",
         "purple-muted": "#533C64",
         white: "#FFFFFF",
         offwhite: "#F4F0EB",
@@ -42,6 +54,7 @@ const config = {
       animation: {
         "slide-in-left": "slide-in-left 0.3s ease-out forwards",
         "slide-out-left": "slide-out-left 0.3s ease-in forwards",
+        "gradient-shimmer": "gradient-shimmer 3s ease infinite",
       },
 
       keyframes: {
@@ -52,6 +65,11 @@ const config = {
         "slide-out-left": {
           "0%": { transform: "translateX(0)", opacity: "1" },
           "100%": { transform: "translateX(-100%)", opacity: "0" },
+        },
+        "gradient-shimmer": {
+          "0%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+          "100%": { "background-position": "0% 50%" },
         },
       },
     },
